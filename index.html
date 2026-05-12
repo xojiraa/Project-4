@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Albin Gabrielsson</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header>
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-6" id="header-name">
+                    <h1 class="py-4 ps-0 m-0">Albin Gabrielsson</h1>
+                </div>
+
+                <div class="col-6 col-lg-6" id="header-navbar">
+                    <nav class="navbar navbar-expand-md navbar-light" aria-label="Huvudmeny">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+                            aria-label="Visa meny">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse col-md-6" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" draggable="false">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html" draggable="false">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" draggable="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <hr class="m-0">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6" id="main-top">
+                    <p class="fs-5 ps-0">Student at NTI</p>
+                </div>
+                <nav class="col-md-6 media-links" aria-label="Sociala medier">
+                    <ul class="list-unstyled d-flex gap-3 mb-0">
+                        <li><a href="https://github.com/xojiraa" draggable="false">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/pewdiepie/" draggable="false">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com" draggable="false">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn" id="theme-toggle" type="button">Switch theme</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="row mt-5" aria-labelledby="intro-heading">
+                <div class="col-12">
+                    <h2 id="intro-heading" class="text-center h5">Hej! Jag heter Albin och studerar på NTI Gymnasiet
+                        Helsingborg. Detta är några av mina projekt!</h2>
+                </div>
+            </section>
+
+            <div class="row mt-5" id="projects">
+                <div class="col-12">
+                    <div class="portfolio-grid">
+
+                        <div class="grid-item project-1" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/picture1.png', 'This is a quiz that I made with hardcoded questions and answers. It has an auto correction system that is written in Javascript. ')">
+                            <figure class="m-0">
+                                <img src="../Images/picture1.png" loading="lazy"
+                                    alt="Skärmdump av Quiz-projekt med Javascript">
+                                <figcaption class="overlay">
+                                    <span class="project-number">1</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="grid-item tall project-2" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/project4.png', 'This is a website I made for a fictional company called Rin`s Designs...')">
+                            <figure class="m-0">
+                                <img src="../Images/project4.png" loading="lazy" alt="Webbdesign för Rin's Designs">
+                                <figcaption class="overlay">
+                                    <span class="project-number">2</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="grid-item project-3" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/project3.png', 'This is another website I made for a school project...')">
+                            <figure class="m-0">
+                                <img src="../Images/project3.png" loading="lazy"
+                                    alt="Webbprojekt med fokus på offset-borders">
+                                <figcaption class="overlay">
+                                    <span class="project-number">3</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="grid-item tall project-4" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/project6.png', 'This project is an attempt at making a more formal website...')">
+                            <figure class="m-0">
+                                <img src="../Images/project6.png" loading="lazy" alt="Nyhetswebbsida layout">
+                                <figcaption class="overlay">
+                                    <span class="project-number">4</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="grid-item wide project-6" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/project5.png', 'This project is one of the first ones I made...')">
+                            <figure class="m-0">
+                                <img src="../Images/project5.png" loading="lazy"
+                                    alt="Grundläggande HTML och CSS övning">
+                                <figcaption class="overlay">
+                                    <span class="project-number">6</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="grid-item project-5" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
+                            onclick="openlightbox('../Images/project2.png', 'This is a project I made for my tech lessons...')">
+                            <figure class="m-0">
+                                <img src="../Images/project2.png" loading="lazy"
+                                    alt="Inventionsprojekt för tekniklektion">
+                                <figcaption class="overlay">
+                                    <span class="project-number">5</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <hr>
+                    <p class="text-center">&copy; 2026 Albin Gabrielsson productions</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="lightboxmodal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black border-0">
+                <div class="modal-header border-0">
+                    <h2 class="visually-hidden" id="modalTitle">Projektvisning</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Stäng"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center justify-content-center p-0">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="lightboxImage" class="img-fluid w-50" alt="Fullskärmsvisning av projekt">
+                    <div class="p-5">
+                        <p id="lightboxDescription" class="text-white fs-5 text-center"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
