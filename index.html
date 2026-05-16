@@ -88,8 +88,13 @@
                         <div class="grid-item project-1" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/picture1.png', 'This is a quiz that I made with hardcoded questions and answers. It has an auto correction system that is written in Javascript. ')">
                             <figure class="m-0">
-                                <img src="Images/picture1.png" loading="lazy"
-                                    alt="Skärmdump av Quiz-projekt med Javascript">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/picture1webp-400w.webp 400w,
+                                            Images/picture1webp-800w.webp 800w,"
+                                        sizes="(max-width: 768px) 100vw, 33vw">
+                                    <img src="Images/picture1.png" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw"
+                                        alt="Quizprojekt med JavaScript">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">1</span>
                                 </figcaption>
@@ -99,7 +104,12 @@
                         <div class="grid-item tall project-2" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/project4.png', 'This is a website I made for a fictional company called Rin`s Designs.')">
                             <figure class="m-0">
-                                <img src="Images/project4.png" loading="lazy" alt="Webbdesign för Rin's Designs">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/project4webp-400w.webp 400w,
+                                            Images/project4webp-600w.webp 600w"
+                                        sizes="(max-width: 768px) 100vw, 33vw">
+                                    <img src="Images/project4.png" loading="lazy" alt="Webbdesign för Rin's Designs">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">2</span>
                                 </figcaption>
@@ -109,8 +119,13 @@
                         <div class="grid-item project-3" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/project3.png', 'This is another website I made for a school project.')">
                             <figure class="m-0">
-                                <img src="Images/project3.png" loading="lazy"
-                                    alt="Webbprojekt med fokus på offset-borders">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/project3webp-400w.webp 400w,
+                                            Images/project3webp-800w.webp 800w"
+                                        sizes="(max-width: 768px) 100vw, 33vw">
+                                    <img src="Images/project3.png" loading="lazy"
+                                        alt="Webbprojekt med fokus på offset-borders">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">3</span>
                                 </figcaption>
@@ -120,7 +135,12 @@
                         <div class="grid-item tall project-4" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/project6.png', 'This project is an attempt at making a more formal website.')">
                             <figure class="m-0">
-                                <img src="Images/project6.png" loading="lazy" alt="Nyhetswebbsida layout">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/project6webp-400w.webp 400w,
+                                            Images/project6webp.webp 800w"
+                                        sizes="(max-width: 768px) 100vw, 33vw">
+                                    <img src="Images/project6.png" loading="lazy" alt="Nyhetswebbsida layout">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">4</span>
                                 </figcaption>
@@ -130,8 +150,12 @@
                         <div class="grid-item wide project-6" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/project5.png', 'This project is one of the first ones I made.')">
                             <figure class="m-0">
-                                <img src="Images/project5.png" loading="lazy"
-                                    alt="Grundläggande HTML och CSS övning">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/project5webp-400w.webp 400w,
+                                            Images/project5webp-800w.webp 800w"
+                                        sizes="(max-width: 768px) 100vw, 66vw">
+                                <img src="Images/project5.png" loading="lazy" alt="Grundläggande HTML och CSS övning">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">6</span>
                                 </figcaption>
@@ -141,8 +165,12 @@
                         <div class="grid-item project-5" data-bs-toggle="modal" data-bs-target="#lightboxmodal"
                             onclick="openlightbox('Images/project2.png', 'This is a project I made for my tech lessons.')">
                             <figure class="m-0">
-                                <img src="Images/project2.png" loading="lazy"
-                                    alt="Inventionsprojekt för tekniklektion">
+                                <picture>
+                                    <source type="image/webp" srcset="Images/project2webp-400w.webp 400w,
+                                            Images/project2webp-800w.webp 800w"
+                                        sizes="(max-width: 768px) 100vw, 33vw">
+                                    <img src="Images/project2.png" loading="lazy" alt="Inventionsprojekt för tekniklektion">
+                                </picture>
                                 <figcaption class="overlay">
                                     <span class="project-number">5</span>
                                 </figcaption>
@@ -164,7 +192,7 @@
         </footer>
     </div>
 
-    <div class="modal fade" id="lightboxmodal" tabindex="-1"  aria-hidden="true">
+    <div class="modal fade" id="lightboxmodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content bg-black border-0">
                 <div class="modal-header border-0">
@@ -173,7 +201,8 @@
                         aria-label="Stäng"></button>
                 </div>
                 <div class="modal-body d-flex flex-column align-items-center justify-content-center p-0">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="lightboxImage" class="img-fluid w-50" alt="Fullskärmsvisning av projekt">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        id="lightboxImage" class="img-fluid w-50" alt="Fullskärmsvisning av projekt">
                     <div class="p-5">
                         <p id="lightboxDescription" class="text-white fs-5 text-center"></p>
                     </div>
